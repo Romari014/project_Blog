@@ -1,0 +1,16 @@
+{
+  "name": "js_project_blog",
+  "version": "1.0.0",
+  "description": "js project blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "project",
+    "blog"
+  ],
+  "author": "Roman Tsos",
+  "license": "ISC"
+}
