@@ -1,4 +1,6 @@
 import {HeaderComponent} from './components/headerComponent';
+import {NavigationComponent} from './components/navigationComponent';
 
-const header = new HeaderComponent('header');
-// console.log(header);
+new HeaderComponent('header');
+
+const navigation = new NavigationComponent('navigation') 
