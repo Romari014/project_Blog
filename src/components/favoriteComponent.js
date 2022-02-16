@@ -27,7 +27,7 @@ async function linkClickHandler(e) {
     e.preventDefault();
 
     if(e.target.classList.contains('jsLink')) {
-        const postId = e.target.textContent;
+        const postId = e.target.dataset.id;
         this.$el.innerHTML = ''
         this.loader.show()
         const post =  await apiService.fetchPostById(postId);
@@ -41,7 +41,7 @@ function renderList(list = []) {
     if (list && list.length) {
         return `
             <ul>
-                ${list.map(i => `<li><a href="#" class="jsLink">${i}</a></li>`).join(' ')}
+                ${list.map(i => `<li><a href="#" class="jsLink" data-id="${i.id}">${i.title}</a></li>`).join(' ')}
             </ul>
         `
     } 
